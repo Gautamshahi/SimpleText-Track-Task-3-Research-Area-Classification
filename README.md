@@ -5,9 +5,7 @@ This pilot task focuses on identifying research areas from scientific texts. Par
 
 The goal of the task is to support automatic subject classification in scientific repositories and digital libraries, thereby improving metadata consistency across collections such as arXiv and OpenAIRE.
 
-The classification scheme used in this task is derived from the DFG (German Research Foundation) classification system. The task aims to identify only two labels of the research area i.e, filed and discipline
-
-
+The classification scheme used in this task is derived from the DFG (German Research Foundation) classification system. The task aims to identify only two labels of the research area, i.e., field and discipline
 ---
 
 ## Dataset
@@ -73,18 +71,19 @@ In an exact match, we compare the output of the model directly with the ground t
 
 ### String Distance (SD)
 
-For the string distance measure, we compute the similarity between the predicted research areas and the actual research areas using the normalized Levenshtein distance. This metric captures partially correct answers where the wording may differ slightly but still remains close to the expected result.
+For the string distance measure, we compute the similarity between the predicted and actual research areas using the normalized Levenshtein distance. This metric captures partially correct answers where the wording may differ slightly but still remains close to the expected result.
 
-The normalized Levenshtein distance is computed as:
+The normalized Levenshtein similarity is computed as:
+
 \[
 SD(s_1, s_2) = 1 - \frac{\text{lev}(s_1, s_2)}{\max(|s_1|, |s_2|)}
 \]
 
 where:
-- \(s_1, s_2\) are the two strings being compared,
-- \(\text{lev}(s_1, s_2)\) is the Levenshtein distance between the strings,
-- \(|s_1|, |s_2|\) represent the lengths of the strings,
-- \(\max(|s_1|, |s_2|)\) normalizes the score between 0 and 1.
+- \(s_1\) and \(s_2\) are the two strings being compared,
+- \(\text{lev}(s_1, s_2)\) denotes the Levenshtein distance between the two strings,
+- \(|s_1|\) and \(|s_2|\) denote the lengths of the strings,
+- \(\max(|s_1|, |s_2|)\) is used for normalization, ensuring that the similarity score ranges between 0 and 1.
 
 If the resulting similarity score exceeds **0.7**, the prediction is considered a match.
 
