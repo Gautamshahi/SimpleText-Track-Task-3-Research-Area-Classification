@@ -27,10 +27,8 @@ The dataset consists of scientific publication records stored in CSV format.
 ### Example
 
 ```csv
-id,label_em,label_sd,label_ed
-train_1,	Finding Complex Biological Relationships in Recent PubMed Articles Using
-  Bio-LDA,  The overwhelming amount of available scholarly literature in the life
-sciences poses significant challenges to scientists ..., Life Sciences, Biology
+id,ltitle, abstract,field_area,discipline_area
+train_1,	Finding Complex Biological Relationships in Recent PubMed Articles Using Bio-LDA,  The overwhelming amount of available scholarly literature in the life sciences poses significant challenges to scientists ..., Life Sciences, Biology
 ```
 
 ### Label Structure
