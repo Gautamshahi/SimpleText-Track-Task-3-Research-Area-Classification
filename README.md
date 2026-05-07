@@ -24,6 +24,15 @@ The dataset consists of scientific publication records stored in CSV format.
 | `field_area` | Broad research field label |
 | `discipline_area` | Fine-grained research discipline label |
 
+### Example
+
+```csv
+id,label_em,label_sd,label_ed
+train_1,	Finding Complex Biological Relationships in Recent PubMed Articles Using
+  Bio-LDA,  The overwhelming amount of available scholarly literature in the life
+sciences poses significant challenges to scientists ..., Life Sciences, Biology
+```
+
 ### Label Structure
 
 The dataset contains two hierarchical labels:
@@ -91,13 +100,7 @@ The file must contain the following columns:
 | `label_sd` | Prediction optimized for String Distance |
 | `label_ed` | Prediction optimized for Embedding Distance |
 
-### Example
 
-```csv
-id,label_em,label_sd,label_ed
-1,Engineering,Engineering,Engineering
-2,Computer Science,Computer Science,Computer Science
-```
 
 ---
 
