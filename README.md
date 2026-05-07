@@ -1,12 +1,12 @@
 # SimpleText Track — Task 3: Research Area Classification
 
 ## Overview
+This pilot task focuses on identifying research areas from scientific texts. Participants are expected to develop models that classify scientific publications according to a predefined taxonomy based on the [DFG classification system](https://github.com/Gautamshahi/SimpleText-Track-Task-3-Research-Area-Classification/blob/main/classification_taxonomy.csv). The task may be approached either as a hierarchical classification problem or through the use of large language models (LLMs) for research area prediction.
 
-This pilot task focuses on the identification of research areas from scientific text. Participants are expected to develop models that classify scientific publications according to a predefined taxonomy.
+The goal of the task is to support automatic subject classification in scientific repositories and digital libraries, thereby improving metadata consistency across collections such as arXiv and OpenAIRE.
 
-The task aims to support automatic subject classification for scientific repositories and digital libraries, helping improve metadata consistency across collections such as arXiv and OpenAIRE.
+The classification scheme used in this task is derived from the DFG (German Research Foundation) classification system. The task aims to identify only two labels of the research area i.e, filed and discipline
 
-The classification scheme is based on the DFG (German Research Foundation) classification system.
 
 ---
 
@@ -99,6 +99,17 @@ The file must contain the following columns:
 | `label_ed` | Prediction optimized for Embedding Distance |
 
 
+
+
+The task is based on the hierarchical classification of research area ([Journal Paper](https://arxiv.org/pdf/2604.23430)):
+```
+@article{shahi2026automating,
+  title={Automating Categorization of Scientific Texts with In-Context Learning and Prompt-Chaining in Large Language Models},
+  author={Shahi, Gautam Kishore and Hummel, Oliver},
+  journal={arXiv preprint arXiv:2604.23430},
+  year={2026}
+}
+```
 
 ---
 
