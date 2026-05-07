@@ -98,10 +98,17 @@ After computing all evaluation measures, we used accuracy to report the final re
 
 Accuracy is defined as:
 
+### Accuracy
+
+The accuracy metric is computed as:
+
 \[
 \text{Accuracy} =
-\frac{\text{Number of Correct Predictions}}
-{\text{Total Number of Predictions}}
+\frac{
+\text{Number of Correct Predictions}
+}{
+\text{Total Number of Predictions}
+}
 \]
 
 where:
