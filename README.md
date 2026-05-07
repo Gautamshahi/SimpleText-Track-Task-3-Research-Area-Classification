@@ -65,7 +65,11 @@ Ground-truth labels for the test set are hidden and used exclusively for evaluat
 
 ## Evaluation
 
-To evaluate the quality of the predicted research areas, submissions will be evaluated using accuracy using multiple evaluation measures, including **String Distance (SD)**, **Embedding Distance (ED)**, and **Accuracy**.
+To evaluate the quality of the predicted research areas, submissions will be evaluated using  **Accuracy** using multiple evaluation measures, including **Exact Match(EM)**, **String Distance (SD)**, and **Embedding Distance (ED)**.
+
+
+### Exact Match (EM) 
+In an exact match, we compare the output of the model directly with the ground truth data. It is a binary measure for comparing the result; if it matches, then 1, else 0. For instance, if the LLM returns “Social” and the actual research area is “Social Science”, then the EM returns 0.
 
 ### String Distance (SD)
 
