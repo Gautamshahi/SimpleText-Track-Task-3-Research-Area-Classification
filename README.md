@@ -94,22 +94,13 @@ This measure helps identify semantically equivalent predictions even when differ
 
 ### Accuracy
 
-After computing all evaluation measures, we used accuracy to report the final results obtained from different prompt engineering strategies and parameter settings.
-
-Accuracy is defined as:
 
 ### Accuracy
 
 The accuracy metric is computed as:
 
-\[
-\text{Accuracy} =
-\frac{
-\text{Number of Correct Predictions}
-}{
-\text{Total Number of Predictions}
-}
-\]
+Accuracy = Number of Correct Predictions\Total Number of Predictions
+
 
 where:
 - **Number of Correct Predictions** refers to the total number of correctly classified samples.
