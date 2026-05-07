@@ -77,44 +77,18 @@ The normalized Levenshtein similarity is computed as:
 
 The normalized Levenshtein similarity between two strings is defined as:
 
-\[
-SD(s_1, s_2) = 1 -
-\frac{
-\operatorname{lev}(rs_1, rs_2)
-}{
-\max\left(|rs_1|, |rs_2|\right)
-}
-\]
+<p align="center">
+  <img src="https://github.com/Gautamshahi/SimpleText-Track-Task-3-Research-Area-Classification/blob/main/e1.png" alt="Evaluation Metrics" width="700"/>
+</p>
 
-where:
-
-- \(rs_1\) and \(rs_2\) represent the actual research and predicted research area,
-- \(\operatorname{lev}(rs_1, rs_2)\) denotes the Levenshtein distance between \(s_1\) and \(s_2\),
-- \(|rs_1|\) and \(|rs_2|\) denote the lengths of the respective strings,
-- \(\max\left(|rs_1|, |rs_2|\right)\) is used for normalization, ensuring that the similarity score lies within the range \([0,1]\).
-If the resulting similarity score exceeds **0.7**, the prediction is considered a match.
 
 ### Embedding Distance (ED)
 
 For semantic similarity evaluation, we use BERT sentence embeddings to compare the predicted research area with the actual research area. Both texts are transformed into vector embeddings, and cosine similarity is computed between them.
 
-Let \(v_{\text{model}}\) and \(v_{\text{actual}}\) represent the sentence embeddings for the predicted and actual research areas, respectively. The embedding distance is defined as:
-
-\[
-ED = \cos(v_(rs_1),v_(rs_2)) =
-\frac{v_{\text{model}} \cdot v_{\text{actual}}}
-{\|v_{\text{model}}\| \, \|v_{\text{actual}}\|}
-\]
-
-A prediction is considered a match if:
-
-\[
-\text{Match} =
-\begin{cases}
-1, & \text{if } ED > 0.7 \\
-0, & \text{otherwise}
-\end{cases}
-\]
+<p align="center">
+  <img src="https://github.com/Gautamshahi/SimpleText-Track-Task-3-Research-Area-Classification/blob/main/e2.png" alt="Evaluation Metrics" width="700"/>
+</p>
 
 This measure helps identify semantically equivalent predictions even when different wording is used.
 
