@@ -99,7 +99,7 @@ This measure helps identify semantically equivalent predictions even when differ
 
 The accuracy metric is computed as:
 
-Accuracy = Number of Correct Predictions\Total Number of Predictions
+Accuracy = Number of Correct Predictions/Total Number of Predictions
 
 
 where:
