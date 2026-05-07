@@ -65,21 +65,64 @@ Ground-truth labels for the test set are hidden and used exclusively for evaluat
 
 ## Evaluation
 
-Submissions will be evaluated using three complementary metrics:
+To evaluate the quality of the predicted research areas, submissions will be evaluated using accuracy using multiple evaluation measures, including **String Distance (SD)**, **Embedding Distance (ED)**, and **Accuracy**.
 
-### 1. Exact Match (EM)
+### String Distance (SD)
 
-A binary metric that checks whether the predicted output exactly matches the ground truth.
+For the string distance measure, we compute the similarity between the predicted research areas and the actual research areas using the normalized Levenshtein distance. This metric captures partially correct answers where the wording may differ slightly but still remains close to the expected result.
 
-### 2. String Distance (SD)
+The normalized Levenshtein distance is computed as:
+\[
+SD(s_1, s_2) = 1 - \frac{\text{lev}(s_1, s_2)}{\max(|s_1|, |s_2|)}
+\]
 
-A normalized Levenshtein distance measuring textual similarity between the prediction and the reference.
+where:
+- \(s_1, s_2\) are the two strings being compared,
+- \(\text{lev}(s_1, s_2)\) is the Levenshtein distance between the strings,
+- \(|s_1|, |s_2|\) represent the lengths of the strings,
+- \(\max(|s_1|, |s_2|)\) normalizes the score between 0 and 1.
 
-### 3. Embedding Distance (ED)
+If the resulting similarity score exceeds **0.7**, the prediction is considered a match.
 
-A semantic similarity metric computed using BERT embeddings of the prediction and the reference.
+### Embedding Distance (ED)
 
----
+For semantic similarity evaluation, we use BERT sentence embeddings to compare the predicted research area with the actual research area. Both texts are transformed into vector embeddings, and cosine similarity is computed between them.
+
+Let \(v_{\text{model}}\) and \(v_{\text{actual}}\) represent the sentence embeddings for the predicted and actual research areas, respectively. The embedding distance is defined as:
+
+\[
+ED = \cos(v_{\text{model}}, v_{\text{actual}}) =
+\frac{v_{\text{model}} \cdot v_{\text{actual}}}
+{\|v_{\text{model}}\| \, \|v_{\text{actual}}\|}
+\]
+
+A prediction is considered a match if:
+
+\[
+\text{Match} =
+\begin{cases}
+1, & \text{if } ED > 0.7 \\
+0, & \text{otherwise}
+\end{cases}
+\]
+
+This measure helps identify semantically equivalent predictions even when different wording is used.
+
+### Accuracy
+
+After computing all evaluation measures, we used accuracy to report the final results obtained from different prompt engineering strategies and parameter settings.
+
+Accuracy is defined as:
+
+\[
+\text{Accuracy} =
+\frac{\text{Number of Correct Predictions}}
+{\text{Total Number of Predictions}}
+\]
+
+where:
+- **Number of Correct Predictions** refers to the total number of correctly classified samples.
+- **Total Number of Predictions** refers to the total number of evaluated samples.
 
 ## Submission Format
 
@@ -94,10 +137,8 @@ The file must contain the following columns:
 | Column Name | Description |
 |---|---|
 | `id` | Unique sample identifier |
-| `label_em` | Prediction optimized for Exact Match |
-| `label_sd` | Prediction optimized for String Distance |
-| `label_ed` | Prediction optimized for Embedding Distance |
-
+| `field_area` | Prediction optimized for Exact Match |
+| `displicine_area` | Prediction optimized for String Distance |
 
 
 
