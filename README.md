@@ -94,13 +94,8 @@ This measure helps identify semantically equivalent predictions even when differ
 
 ### Accuracy
 
-
-### Accuracy
-
 The accuracy metric is computed as:
-
 Accuracy = Number of Correct Predictions/Total Number of Predictions
-
 
 where:
 - **Number of Correct Predictions** refers to the total number of correctly classified samples.
