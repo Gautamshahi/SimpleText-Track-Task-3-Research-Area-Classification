@@ -68,16 +68,12 @@ To evaluate the quality of the predicted research areas, submissions will be eva
 - Exact Match (EM) 
 In an exact match, we compare the output of the model directly with the ground truth data. It is a binary measure for comparing the result; if it matches, then 1, else 0. For instance, if the LLM returns “Social” and the actual research area is “Social Science”, then the EM returns 0.
 
-- String Distance (SD)
-
-For the string distance measure, we compute the similarity between the predicted and actual research areas using the normalized Levenshtein distance. This metric captures partially correct answers where the wording may differ slightly but still remains close to the expected result. The normalized Levenshtein similarity is computed as: 
+- String Distance (SD) For the string distance measure, we compute the similarity between the predicted and actual research areas using the normalized Levenshtein distance. This metric captures partially correct answers where the wording may differ slightly but still remains close to the expected result. The normalized Levenshtein similarity is computed as: 
 <p align="center">
   <img src="https://github.com/Gautamshahi/SimpleText-Track-Task-3-Research-Area-Classification/blob/main/e1.png" alt="Evaluation Metrics" width="700"/>
 </p>
 
-- Embedding Distance (ED)
-
-For semantic similarity evaluation, we use BERT sentence embeddings to compare the predicted research area with the actual research area. Both texts are transformed into vector embeddings, and cosine similarity is computed between them.
+- Embedding Distance (ED) For semantic similarity evaluation, we use BERT sentence embeddings to compare the predicted research area with the actual research area. Both texts are transformed into vector embeddings, and cosine similarity is computed between them.
 
 <p align="center">
   <img src="https://github.com/Gautamshahi/SimpleText-Track-Task-3-Research-Area-Classification/blob/main/e2.png" alt="Evaluation Metrics" width="700"/>
