@@ -8,11 +8,9 @@ The goal of the task is to support automatic subject classification in scientifi
 The classification scheme used in this task is derived from the DFG (German Research Foundation) classification system. The task aims to identify only two labels of the research area, i.e., field and discipline
 
 ## Dataset
-
 The dataset consists of scientific publication records stored in CSV format.
 
 ### Dataset Columns
-
 | Column | Description |
 |---|---|
 | `id` | Unique identifier of the publication |
@@ -22,21 +20,17 @@ The dataset consists of scientific publication records stored in CSV format.
 | `discipline_area` | Fine-grained research discipline label |
 
 ### Example
-
 ```csv
 id,ltitle, abstract,field_area,discipline_area
 train_1,	Finding Complex Biological Relationships in Recent PubMed Articles Using Bio-LDA,  The overwhelming amount of available scholarly literature in the life sciences poses significant challenges to scientists ..., Life Sciences, Biology
 ```
 
 ### Label Structure
-
 The dataset contains two hierarchical labels:
-
 - `field_area`
 - `discipline_area`
 
 Both labels are derived from the DFG classification system.
-
 > **Note:**  
 > `discipline_area` is a subset of `field_area`.  
 > Therefore, each discipline belongs to a corresponding research field.
@@ -47,13 +41,13 @@ Both labels are derived from the DFG classification system.
 
 ### Training Set
 
-The training set contains:
+The training set contains (12301 records):
 - Input data
 - Ground-truth labels (`field_area` and `discipline_area`)
 
 ### Test Set
 
-The test set contains:
+The test set contains (3106 records):
 - Input data only
 
 Ground-truth labels for the test set are hidden and used exclusively for evaluation.
@@ -125,7 +119,7 @@ The task is based on the hierarchical classification of research area ([Journal 
 submission.csv → submission.zip → Google Form 
 ```
 
-Participants must compress `submission.csv` into a `.zip` archive before uploading it to ([Google Form](https://forms.gle/HpSPiHjtzpW3yHFu6)).
+Submission files need 3106 entries with IDs, field_area, and displicine_area, and Participants must compress `submission.csv` into a `.zip` archive before uploading it to ([Google Form](https://forms.gle/HpSPiHjtzpW3yHFu6)).
 
 ---
 
