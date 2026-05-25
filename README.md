@@ -125,7 +125,7 @@ The task is based on the hierarchical classification of research area ([Journal 
 submission.csv → submission.zip → Google Form 
 ```
 
-Participants must compress `submission.csv` into a `.zip` archive before uploading it to ([Google Form] (https://forms.gle/HpSPiHjtzpW3yHFu6)).
+Participants must compress `submission.csv` into a `.zip` archive before uploading it to ([Google Form](https://forms.gle/HpSPiHjtzpW3yHFu6)).
 
 ---
 
