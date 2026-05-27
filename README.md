@@ -133,10 +133,12 @@ Submission files need 3106 entries with IDs, field_area, and displicine_area, an
 ## Leaderboard
 Ranking is based on exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match.
 
-| Rank | Team Name | Rows | Field EM | Field SD | Field ED | Discipline EM | Discipline SD | Discipline ED | Exact Both Fields |
-|------|------------|------|-----------|-----------|-----------|----------------|----------------|----------------|-------------------|
-| 1 | Ella Hawkins | 3106 | 0.9559 | 0.9801 | 0.9824 | 0.8902 | 0.9147 | 0.9386 | 0.8899 |
-| 2 | Edwin Thuma | 3106 | 0.9549 | 0.9798 | 0.9828 | 0.8947 | 0.9171 | 0.9411 | 0.8947 |
-| 3 | gemini-3.5-flash - Jaap Kamps | 3106 | 0.8606 | 0.9373 | 0.9379 | 0.7888 | 0.8350 | 0.8807 | 0.7888 |
-| 4 | David Condrey | 3106 | 0.8117 | 0.9171 | 0.9180 | 0.6645 | 0.7303 | 0.7980 | 0.6645 |
-| 5 | st26-Task3-dummy - Jaap Kamps | 3106 | 0.7675 | 0.8993 | 0.9070 | 0.4127 | 0.5745 | 0.6712 | 0.4127 |
+## Leaderboard
+
+| Rank | Team Name | Field EM | Field SD | Field ED | Discipline EM | Discipline SD | Discipline ED | Exact Both Fields |
+|------|------------|-----------|-----------|-----------|----------------|----------------|----------------|-------------------|
+| 1 | Ella Hawkins | 0.9559 | 0.9801 | 0.9824 | 0.8902 | 0.9147 | 0.9386 | 0.8899 |
+| 2 | Edwin Thuma | 0.9549 | 0.9798 | 0.9828 | 0.8947 | 0.9171 | 0.9411 | 0.8947 |
+| 3 | gemini-3.5-flash - Jaap Kamps | 0.8606 | 0.9373 | 0.9379 | 0.7888 | 0.8350 | 0.8807 | 0.7888 |
+| 4 | David Condrey | 0.8117 | 0.9171 | 0.9180 | 0.6645 | 0.7303 | 0.7980 | 0.6645 |
+| 5 | st26-Task3-dummy - Jaap Kamps | 0.7675 | 0.8993 | 0.9070 | 0.4127 | 0.5745 | 0.6712 | 0.4127 |
