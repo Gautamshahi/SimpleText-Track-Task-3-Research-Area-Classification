@@ -133,10 +133,17 @@ Submission files need 3106 entries with IDs, field_area, and displicine_area, an
 ## Leaderboard
 Ranking is based on exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match.
 
-| Rank | Team Name | Field EM | Field SD | Field ED | Discipline EM | Discipline SD | Discipline ED | Exact Both Fields |
-|------|------------|-----------|-----------|-----------|----------------|----------------|----------------|-------------------|
-| 1 | UBCS | 0.9549 | 0.9798 | 0.9828 | 0.8947 | 0.9171 | 0.9411 | 0.8947 |
-| 2 | AIIRLab | 0.9559 | 0.9801 | 0.9824 | 0.8902 | 0.9147 | 0.9386 | 0.8899 |
-| 3 | gemini-3.5-flash-UAmsterdam | 0.8606 | 0.9373 | 0.9379 | 0.7888 | 0.8350 | 0.8807 | 0.7888 |
-| 4 | Writerslogic Inc | 0.8117 | 0.9171 | 0.9180 | 0.6645 | 0.7303 | 0.7980 | 0.6645 |
-| 5 | st26-Task3-dummy-UAmsterdam | 0.7675 | 0.8993 | 0.9070 | 0.4127 | 0.5745 | 0.6712 | 0.4127 |
+
+| Team Name | Discipline Area |  |  | Field Area |  |  |
+|------------|-----------------|--|--|------------|--|--|
+|            | EM | SD | ED | EM | SD | ED |
+| UBCS_2 | 0.5915 | 0.6877 | 0.7738 | 0.7684 | 0.8538 | 0.8912 |
+| AIIRLab_2 | 0.6539 | 0.7356 | 0.8068 | 0.7353 | 0.8270 | 0.8695 |
+| Data Dumplings | 0.5983 | 0.6909 | 0.7836 | 0.8448 | 0.9080 | 0.9242 |
+| SRH-Reliable AI | 0.6056 | 0.7003 | 0.7780 | 0.7390 | 0.8284 | 0.8689 |
+| UBCS_1 | 0.5518 | 0.6483 | 0.7533 | 0.7573 | 0.8481 | 0.8804 |
+| AIIRLab_1 | 0.5838 | 0.6746 | 0.7696 | 0.7288 | 0.8244 | 0.8698 |
+| UAmsterdam_2 | 0.6122 | 0.7035 | 0.7759 | 0.7033 | 0.8279 | 0.8472 |
+| Writerslogic Inc | 0.4439 | 0.5676 | 0.6571 | 0.5561 | 0.7471 | 0.7924 |
+| UAmsterdam_1 | 0.0625 | 0.2281 | 0.4099 | 0.2000 | 0.6225 | 0.6659 |
+
