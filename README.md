@@ -131,7 +131,7 @@ Submission files need 3106 entries with IDs, field_area, and displicine_area, an
 
 ---
 ## Leaderboard
-Ranking is based on exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match.
+Ranking is based on exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match. The score shows the micro average of both levels (ranking of teams will be done later).
 
 
 | Team Name | Discipline Area |  |  | Field Area |  |  |
