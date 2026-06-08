@@ -150,7 +150,7 @@ Ranking is based on the overall macro-average of all classes. exact matches betw
 | UAmsterdam_2 | 0.54 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 |
 
 ## String match
-| Team Name | Natural Sciences | Life Sciences | Engineering Sciences | Social Sciences | Humanities | Macro_SD |
+| Team Name | Natural Sciences | Life Sciences | Engineering Sciences | Social Sciences | Humanities | Macro-Average |
 |-----------|------------------:|--------------:|----------------------:|----------------:|-----------:|---------:|
 | Data Dumplings | 0.91 | 0.75 | 0.79 | 0.84 | 0.60 | 0.78 |
 | Stuttgart AI | 0.92 | 0.78 | 0.85 | 0.76 | 0.30 | 0.72 |
