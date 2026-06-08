@@ -131,7 +131,7 @@ Submission files need 3106 entries with IDs, field_area, and displicine_area, an
 
 ---
 ## Leaderboard
-Ranking is based on exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match. The score shows the micro average of both levels (ranking of teams will be done later).
+Ranking is based on the overall macro-average of all classes. exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match. The score shows the macro average of both levels (ranking of teams will be done later).
 
 ## Exact Match
 | Team Name | Natural Sciences | Life Sciences | Engineering Sciences | Social Sciences | Humanities | Macro-Average |
@@ -149,3 +149,18 @@ Ranking is based on exact matches between the field and discipline, and an entry
 | Writerslogic Inc | 0.79 | 0.32 | 0.11 | 0.62 | 0.00 | 0.37 |
 | UAmsterdam_2 | 0.54 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 |
 
+## String match
+| Team Name | Natural Sciences | Life Sciences | Engineering Sciences | Social Sciences | Humanities | Macro_SD |
+|-----------|------------------:|--------------:|----------------------:|----------------:|-----------:|---------:|
+| Data Dumplings | 0.91 | 0.75 | 0.79 | 0.84 | 0.60 | 0.78 |
+| Stuttgart AI | 0.92 | 0.78 | 0.85 | 0.76 | 0.30 | 0.72 |
+| UBCS_3 | 0.92 | 0.76 | 0.86 | 0.80 | 0.20 | 0.71 |
+| UBCS_2 | 0.92 | 0.75 | 0.82 | 0.79 | 0.20 | 0.69 |
+| UBCS_1 | 0.92 | 0.75 | 0.83 | 0.73 | 0.20 | 0.69 |
+| SRH Reliable AI_2 | 0.92 | 0.81 | 0.86 | 0.82 | 0.00 | 0.68 |
+| SRH-Reliable AI | 0.92 | 0.81 | 0.86 | 0.82 | 0.00 | 0.68 |
+| AIIRLab_2 | 0.91 | 0.82 | 0.87 | 0.75 | 0.00 | 0.67 |
+| AIIRLab_1 | 0.92 | 0.80 | 0.78 | 0.82 | 0.00 | 0.66 |
+| UAmsterdam_1 | 0.81 | 0.54 | 0.86 | 0.48 | 0.40 | 0.62 |
+| Writerslogic Inc | 0.79 | 0.32 | 0.11 | 0.62 | 0.00 | 0.37 |
+| UAmsterdam_2 | 0.54 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 |
