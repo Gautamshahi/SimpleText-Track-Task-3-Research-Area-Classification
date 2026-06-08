@@ -142,7 +142,7 @@ Ranking is based on exact matches between the field and discipline, and an entry
 | UBCS_2 | 0.92 | 0.75 | 0.82 | 0.79 | 0.20 | 0.69 |
 | UBCS_1 | 0.92 | 0.75 | 0.83 | 0.73 | 0.20 | 0.69 |
 | SRH Reliable AI_2 | 0.92 | 0.81 | 0.86 | 0.82 | 0.00 | 0.68 |
-| SRH-Reliable AI | 0.92 | 0.81 | 0.86 | 0.82 | 0.00 | 0.68 |
+| SRH-Reliable AI_1 | 0.92 | 0.81 | 0.86 | 0.82 | 0.00 | 0.68 |
 | AIIRLab_2 | 0.91 | 0.82 | 0.87 | 0.75 | 0.00 | 0.67 |
 | AIIRLab_1 | 0.92 | 0.80 | 0.78 | 0.82 | 0.00 | 0.66 |
 | UAmsterdam_1 | 0.81 | 0.54 | 0.86 | 0.48 | 0.40 | 0.62 |
