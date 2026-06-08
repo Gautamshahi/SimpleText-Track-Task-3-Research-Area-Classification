@@ -133,17 +133,19 @@ Submission files need 3106 entries with IDs, field_area, and displicine_area, an
 ## Leaderboard
 Ranking is based on exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match. The score shows the micro average of both levels (ranking of teams will be done later).
 
-
-| Team Name | Discipline Area |  |  | Field Area |  |  |
-|------------|-----------------|--|--|------------|--|--|
-|            | EM | SD | ED | EM | SD | ED |
-| UBCS_2 | 0.5915 | 0.6877 | 0.7738 | 0.7684 | 0.8538 | 0.8912 |
-| AIIRLab_2 | 0.6539 | 0.7356 | 0.8068 | 0.7353 | 0.8270 | 0.8695 |
-| Data Dumplings | 0.5983 | 0.6909 | 0.7836 | 0.8448 | 0.9080 | 0.9242 |
-| SRH-Reliable AI | 0.6056 | 0.7003 | 0.7780 | 0.7390 | 0.8284 | 0.8689 |
-| UBCS_1 | 0.5518 | 0.6483 | 0.7533 | 0.7573 | 0.8481 | 0.8804 |
-| AIIRLab_1 | 0.5838 | 0.6746 | 0.7696 | 0.7288 | 0.8244 | 0.8698 |
-| UAmsterdam_2 | 0.6122 | 0.7035 | 0.7759 | 0.7033 | 0.8279 | 0.8472 |
-| Writerslogic Inc | 0.4439 | 0.5676 | 0.6571 | 0.5561 | 0.7471 | 0.7924 |
-| UAmsterdam_1 | 0.0625 | 0.2281 | 0.4099 | 0.2000 | 0.6225 | 0.6659 |
+## Exact Match
+| Team Name | Natural Sciences | Life Sciences | Engineering Sciences | Social Sciences | Humanities | Macro-Average |
+|-----------|------------------:|--------------:|----------------------:|----------------:|-----------:|------:|
+| Data Dumplings | 0.91 | 0.75 | 0.79 | 0.84 | 0.60 | 0.78 |
+| Stuttgart AI | 0.92 | 0.78 | 0.85 | 0.76 | 0.30 | 0.72 |
+| UBCS_3 | 0.92 | 0.76 | 0.86 | 0.80 | 0.20 | 0.71 |
+| UBCS_2 | 0.92 | 0.75 | 0.82 | 0.79 | 0.20 | 0.69 |
+| UBCS_1 | 0.92 | 0.75 | 0.83 | 0.73 | 0.20 | 0.69 |
+| SRH Reliable AI_2 | 0.92 | 0.81 | 0.86 | 0.82 | 0.00 | 0.68 |
+| SRH-Reliable AI | 0.92 | 0.81 | 0.86 | 0.82 | 0.00 | 0.68 |
+| AIIRLab_2 | 0.91 | 0.82 | 0.87 | 0.75 | 0.00 | 0.67 |
+| AIIRLab_1 | 0.92 | 0.80 | 0.78 | 0.82 | 0.00 | 0.66 |
+| UAmsterdam_1 | 0.81 | 0.54 | 0.86 | 0.48 | 0.40 | 0.62 |
+| Writerslogic Inc | 0.79 | 0.32 | 0.11 | 0.62 | 0.00 | 0.37 |
+| UAmsterdam_2 | 0.54 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 |
 
