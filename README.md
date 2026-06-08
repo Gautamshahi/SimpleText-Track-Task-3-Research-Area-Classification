@@ -164,3 +164,5 @@ Ranking is based on the overall macro-average of all classes. exact matches betw
 | UAmsterdam_1 | 0.81 | 0.54 | 0.86 | 0.48 | 0.40 | 0.62 |
 | Writerslogic Inc | 0.79 | 0.32 | 0.11 | 0.62 | 0.00 | 0.37 |
 | UAmsterdam_2 | 0.54 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 |
+
+## Embedding Distance
