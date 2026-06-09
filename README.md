@@ -131,7 +131,7 @@ Submission files need 3106 entries with IDs, field_area, and displicine_area, an
 
 ---
 ## Leaderboard
-Ranking is based on the overall macro-average of all classes. exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match. The score shows the macro average of both levels (ranking of teams will be done later).
+Ranking is based on the overall macro-average of all classes. exact matches between the field and discipline, and an entry matches the test data when both fields and disciplines match. The final score shows the macro average of all classes. The primary ranking is done using Exact Match.
 
 ## Exact Match
 | Team Name | Natural Sciences | Life Sciences | Engineering Sciences | Social Sciences | Humanities | Macro-Average |
@@ -166,3 +166,5 @@ Ranking is based on the overall macro-average of all classes. exact matches betw
 | UAmsterdam_2 | 0.54 | 0.00 | 0.00 | 0.00 | 0.00 | 0.11 |
 
 ## Embedding Distance
+
+TBD
